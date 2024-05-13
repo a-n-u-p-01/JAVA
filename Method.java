@@ -1,5 +1,12 @@
+class A{
+    public String print(int x){
+        return "hello";
+    }
+}
+
 public class Method {
     public static void main(String[] args){
-        System.out.println("1");
+        A obj = new A();
+        System.out.println(obj.print(2));
     }
 }
