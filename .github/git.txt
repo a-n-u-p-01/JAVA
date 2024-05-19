@@ -1,58 +1,44 @@
-# Git Basic Command
+# Step 1: Initialize a git repository
+git init
 
-## Initialize
-git init <project-name> : Initialize an empty Git repository
+# Step 2: Add all files
+git add .
 
-## Clone
-git clone <url> : Clone a repository from the specified URL
+# Step 3: Commit all files
+git commit -m "Initial Commit"
 
-## Add and Commit
-git add <file-name> : Add the specified file to the staging area
-git add . : Add all files in the current directory to the staging area
-git commit -m "<commit-message>" : Commit the changes to the local repository
+# Step 4: Push to remote repository
+git push origin master
 
-## Status
-git status : Show the status of the repository and any changes
+# Step 5: Create a new branch
+git branch <new_branch_name>
 
-## Log
-git log : Show the commit history of the repository
+# Step 6: Switch to new branch
+git checkout <new_branch_name>
 
-## Branch
-git branch <branch-name> : Create a new branch with the specified name
-git branch -l : List all branches in the repository
-git checkout <branch-name> : Switch to the specified branch
-git checkout -b <branch-name> : Create a new branch and switch to it
+# Step 7: Make changes and commit
+git commit -m "<commit_message>"
 
-## Remote
-git remote add <name> <url> : Add a remote repository
-git remote -v : List all remote repositories
-git fetch <remote-name> : Fetch the latest changes from the remote repository
-git pull <remote-name> <branch-name> : Fetch and merge the latest changes from the remote repository
+# Step 8: Push to remote repository
+git push origin <new_branch_name>
 
-## Merge
-git merge <branch-name> : Merge the specified branch into the current branch
+# Step 9: Merge branch
+git merge <branch_to_merge>
 
-## Reset
-git reset <commit-hash> : Reset the local repository to the specified commit
-git reset --hard <commit-hash> : Reset the local repository and staging area to the specified commit
+# Step 10: Push to remote repository
+git push origin master
 
-## Diff
-git diff : Show the differences between the staging area and the local repository
-git diff <commit-hash> : Show the differences between the specified commit and the staging area
+# Step 11: Pull from remote repository
+git pull origin master
 
-## Tag
-git tag <tag-name> : Create a new tag with the specified name
-git tag : List all tags in the repository
+# Step 12: Merge branch
+git merge <branch_to_merge>
 
-## Pull
-git pull <remote-name> <branch-name> : Fetch and merge the latest changes from the remote repository
+# Step 13: Push to remote repository
+git push origin master
 
-## Push
-git push <remote-name> <branch-name> : Push the local branch to the remote repository
+# Step 14: Delete branch
+git branch -d <branch_to_delete>
 
-## Pull Request
-git request-pull : Create a pull request for the current branch to the specified remote branch
-
-## Changelog
-git changelog : Generate a changelog from the commit history
-
+# Step 15: Delete remote branch
+git push origin --delete <branch_to_delete>
