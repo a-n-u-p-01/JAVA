@@ -1,0 +1,58 @@
+# Git Basic Command
+
+## Initialize
+git init <project-name> : Initialize an empty Git repository
+
+## Clone
+git clone <url> : Clone a repository from the specified URL
+
+## Add and Commit
+git add <file-name> : Add the specified file to the staging area
+git add . : Add all files in the current directory to the staging area
+git commit -m "<commit-message>" : Commit the changes to the local repository
+
+## Status
+git status : Show the status of the repository and any changes
+
+## Log
+git log : Show the commit history of the repository
+
+## Branch
+git branch <branch-name> : Create a new branch with the specified name
+git branch -l : List all branches in the repository
+git checkout <branch-name> : Switch to the specified branch
+git checkout -b <branch-name> : Create a new branch and switch to it
+
+## Remote
+git remote add <name> <url> : Add a remote repository
+git remote -v : List all remote repositories
+git fetch <remote-name> : Fetch the latest changes from the remote repository
+git pull <remote-name> <branch-name> : Fetch and merge the latest changes from the remote repository
+
+## Merge
+git merge <branch-name> : Merge the specified branch into the current branch
+
+## Reset
+git reset <commit-hash> : Reset the local repository to the specified commit
+git reset --hard <commit-hash> : Reset the local repository and staging area to the specified commit
+
+## Diff
+git diff : Show the differences between the staging area and the local repository
+git diff <commit-hash> : Show the differences between the specified commit and the staging area
+
+## Tag
+git tag <tag-name> : Create a new tag with the specified name
+git tag : List all tags in the repository
+
+## Pull
+git pull <remote-name> <branch-name> : Fetch and merge the latest changes from the remote repository
+
+## Push
+git push <remote-name> <branch-name> : Push the local branch to the remote repository
+
+## Pull Request
+git request-pull : Create a pull request for the current branch to the specified remote branch
+
+## Changelog
+git changelog : Generate a changelog from the commit history
+
