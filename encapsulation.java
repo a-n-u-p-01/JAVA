@@ -22,7 +22,5 @@ public class encapsulation {
         A obj = new A();
         obj.setter("anupam",22, obj);
         System.out.println(obj.getter("name") + " : " + obj.getter("age"));
-       
-        
     }
 }
